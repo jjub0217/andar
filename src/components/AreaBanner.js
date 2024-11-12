@@ -3,20 +3,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules"; 
 
 
-const bannerData = [
-  {
-    link: "",
-    imgSrc: require("../images/img_banner_item1.jpg"),
-    altText: "3천원 할인쿠폰",
-  },
-  {
-    link: "",
-    imgSrc: require("../images/img_banner_item2.jpg"),
-    altText: "멤버십 전용 혜택 할인",
-  },
-];
 
 const AreaBanner = () => {
+
+  const bannerData = [
+    {
+      link: "",
+      imgSrc: require("../images/img_banner_item1.jpg"),
+      altText: "3천원 할인쿠폰",
+    },
+    {
+      link: "",
+      imgSrc: require("../images/img_banner_item2.jpg"),
+      altText: "멤버십 전용 혜택 할인",
+    },
+  ];
+  
   return (
     <div className="banner_area">
       <Swiper

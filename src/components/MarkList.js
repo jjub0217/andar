@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import ProductItem from "./ProductItem";
 
-const MarkList = ({ data, className }) => {
+const MarkList = () => {
   const marks = [
     {
       href: "",

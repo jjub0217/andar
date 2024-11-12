@@ -1,9 +1,6 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
-import ProductItem from "./ProductItem";
 
-const ServiceList = ({ data, className }) => {
+const ServiceList = () => {
 
   const services = [
     { name: "이용약관", href: "" },

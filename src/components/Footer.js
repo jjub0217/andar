@@ -4,6 +4,9 @@ import ServiceList from "./ServiceList";
 import MarkList from "./MarkList";
 
 const Footer = () => {
+
+
+
   return (
     <footer className="footer">
       <div className="logo_area">
@@ -27,7 +30,7 @@ const Footer = () => {
         </p>
       </div>
       <AreaSns />
-      <ServiceList />
+      <ServiceList/>
       <address className="info_area">
         <span className="info_item">주식회사 안다르</span>
         <span className="info_item">대표이사 : 박효영</span>
