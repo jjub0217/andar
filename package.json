@@ -43,9 +43,5 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
-<<<<<<< HEAD
-  "homepage": "https://github.com/jjub0217/m_andar.git"
-=======
   "homepage": "https://jjub0217.github.io/m_andar"
->>>>>>> main
 }
