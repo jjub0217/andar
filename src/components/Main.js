@@ -647,16 +647,8 @@ const Main = () => {
       <div className="brand_area">
         <a href="" className="link_brand">
           <h2 className="headline">애슬레저 1위 안다르, 브랜드 스토리</h2>
-          <p className="title">
-            Stretch your
-            <br />
-            story with andar
-          </p>
-          <p className="desc">
-            *애슐래저 1위, 2023 대한민국 패션품질대상
-            <br />
-            스포츠 애슬레저 부문
-          </p>
+          <p className="title">Stretch your<br />story with andar</p>
+          <p className="desc">*애슐래저 1위, 2023 대한민국 패션품질대상<br />스포츠 애슬레저 부문</p>
           <span className="label_more">자세히 보기</span>
         </a>
       </div>
@@ -668,21 +660,13 @@ const Main = () => {
       <SectionProduct title="세트" products={setProducts} />
       <a href="" className="link_brand membership">
         <h2 className="headline">안다르 멤버십</h2>
-        <p className="desc">
-          5,000원 쿠폰 지급, 상시 5% 할인
-          <br />
-          등급별 혜택을 놓치지마세요.
-        </p>
+        <p className="desc">5,000원 쿠폰 지급, 상시 5% 할인<br />등급별 혜택을 놓치지마세요. </p>
         <span className="label_more">자세히 보기</span>
       </a>
       <a href="" className="link_brand store">
         <h2 className="headline">안다르 오프라인 스토어 안내</h2>
-        <p className="desc">
-          전국 백화점과 아울렛에서 안다르 제품을 경험하세요.
-          <br />
-          안다르만의 스토어 멤버십을 통해
-          <br />
-          특별한 혜택도 함께 누려보세요.
+        <p className="desc">전국 백화점과 아울렛에서 안다르 제품을 경험하세요.<br />
+          안다르만의 스토어 멤버십을 통해<br />특별한 혜택도 함께 누려보세요.
         </p>
         <span className="label_more">자세히 보기</span>
       </a>

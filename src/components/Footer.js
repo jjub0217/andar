@@ -5,8 +5,6 @@ import MarkList from "./MarkList";
 
 const Footer = () => {
 
-
-
   return (
     <footer className="footer">
       <div className="logo_area">
