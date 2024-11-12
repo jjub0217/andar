@@ -12,6 +12,7 @@ const Nav = ({
       id: 1,
       title: "블프 ~80%",
       isNew: true,
+      isSeason: true,
       subItems: [
         "전체",
         "UP TO 80%",
@@ -73,6 +74,7 @@ const Nav = ({
     {
       id: 6,
       title: "주니어",
+      isNew: true,
       subItems: ["전체", "남", "여"],
     },
     {
@@ -233,7 +235,7 @@ const Nav = ({
           <li key={item.id} className="nav_item">
             <button
               type="button"
-              className="nav_item_title"
+              className={`nav_item_title ${item.isSeason ? "season_item" : ""}`}
               aria-pressed={
                 expandedNavItem.includes(item.id) ? "true" : "false"
               }

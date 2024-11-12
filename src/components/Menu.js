@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const Menu = () => {
   const shortcutItems = [
-    { label: "블프 ~80%", isNew: true },
+    { label: "블프 ~80%", isNew: true, isSeason: true },
     { label: "베스트", isNew: false },
     { label: "신상", isNew: true },
     { label: "우먼즈", isNew: false },
@@ -16,7 +16,7 @@ const Menu = () => {
   ];
 
   const allMenuItems = [
-    { label: "블프 ~80%", isNew: true },
+    { label: "블프 ~80%", isNew: true, isSeason: true },
     { label: "베스트", isNew: false },
     { label: "신상", isNew: true },
     { label: "우먼즈", isNew: false },
@@ -61,7 +61,9 @@ const Menu = () => {
           {shortcutItems.map((item, index) => (
             <li
               key={index}
-              className={`shortcut_menu_item ${item.isNew ? "new_item" : ""}`}
+              className={`shortcut_menu_item  ${item.isNew ? "new_item" : ""} ${
+                item.isNew && item.isSeason ? "season_item" : ""
+              }`}
             >
               <a href="">{item.label}</a>
             </li>
@@ -71,13 +73,11 @@ const Menu = () => {
         <button
           className="all_menu_btn"
           aria-label="전체메뉴열기"
-          // aria-pressed="false"
-          // aria-expanded="false"
           type="button"
           aria-controls="all_menu_area"
           aria-pressed={isMenuOpen ? "true" : "false"}
           aria-expanded={isMenuOpen ? "true" : "false"}
-          onClick={toggleMenu} // 클릭 시 메뉴 토글
+          onClick={toggleMenu}
         ></button>
       </div>
       <div
@@ -90,7 +90,9 @@ const Menu = () => {
           {allMenuItems.map((item, index) => (
             <li
               key={index}
-              className={`all_menu_item ${item.isNew ? "new_item" : ""}`}
+              className={`all_menu_item ${item.isNew ? "new_item" : ""} ${
+                item.isNew && item.isSeason ? "season_item" : ""
+              }`}
             >
               <a href="">{item.label}</a>
             </li>

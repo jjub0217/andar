@@ -14,27 +14,26 @@ const ProductItem = ({ product, rank}) => {
               <span className="label_more">전체</span>
             </>
           ) : null}
-          {!product.description ? 
-          <div className="price_area">
-            {product.discount ? (
-              <strong className="price_discount">
-                <span className="blind">할인율</span>
-                {product.discount}%
-              </strong>
-            ) : null}
-            <span className="price_cur">
-              <span className="blind">할인가격</span>
-              {product.currentPrice}원
-            </span>
-            {product.originalPrice ? (
-              <span className="price_origin">
-                <span className="blind">원래 가격</span>
-                {product.originalPrice}원
+          {!product.description ? (
+            <div className="price_area">
+              {product.discount ? (
+                <strong className="price_discount">
+                  <span className="blind">할인율</span>
+                  {product.discount}%
+                </strong>
+              ) : null}
+              <span className="price_cur">
+                <span className="blind">할인가격</span>
+                {product.currentPrice.toLocaleString()}원
               </span>
-            ) : null}
-          </div>
-          : null
-          }
+              {product.originalPrice ? (
+                <span className="price_origin">
+                  <span className="blind">원래 가격</span>
+                  {product.originalPrice.toLocaleString()}원
+                </span>
+              ) : null}
+            </div>
+          ) : null}
           {product.tags ? (
             <div className="tag_area">
               {product.tags.map((tag, index) => (
