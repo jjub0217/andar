@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import "./styles/style.css";
 
 function App() {
+  
   const [isGnbVisible, setIsGnbVisible] = useState(false);
   const dimmedRef = useRef(null); 
   const burgerBtnRef = useRef(null);
