@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ProductItem from "./ProductItem";
 
 const eventItemsData = [

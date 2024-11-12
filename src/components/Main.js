@@ -1,6 +1,4 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay, EffectFade } from "swiper/modules"; 
 import AdSlide from "./AdSlide";
 import SectionVisual from "./SectionVisual";
 import SectionProduct from "./SectionProduct";

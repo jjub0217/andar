@@ -1,6 +1,4 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 import ProductList from "./ProductList";
 
 const SectionNew = ({ title, products, className}) => {

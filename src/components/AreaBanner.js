@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import ProductItem from "./ProductItem";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay, EffectFade } from "swiper/modules"; 
+import { Pagination, Autoplay } from "swiper/modules"; 
 
 
 const bannerData = [

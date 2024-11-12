@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 import BestTab from "./BestTab";
 import ContentBest from "./ContentBest";
 

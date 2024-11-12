@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 
 const Nav = ({
@@ -170,7 +170,6 @@ const Nav = ({
   ];
 
   const navItemsRef = useRef([]);
-  // const [subListHeights, setSubListHeights] = useState({});
   const [navSubListHeights, setNavSubListHeights] = useState({});
   const eventItemsRef = useRef([]);
   const [eventSubListHeights, setEventSubListHeights] = useState({});
